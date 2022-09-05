@@ -1,5 +1,17 @@
 // Assignment code here
 
+// prompt for pass word criteria
+
+// criteria
+  // 1 which criteria u want
+      // [length, character types]
+  // 2 length 8 - 128
+  // 3 char types [include = lowerCase upperCase numeric specialCharacters]
+
+// validate input, requires, length between 8-128 and at least 1 char type
+
+// upon validation, output to user
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
