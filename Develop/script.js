@@ -1,17 +1,5 @@
 // Assignment code here
 
-// prompt for pass word criteria
-
-// criteria
-  // 1 which criteria u want
-      // [length, character types]
-  // 2 length 8 - 128
-  // 3 char types [include = lowerCase upperCase numeric specialCharacters]
-
-// validate input, requires, length between 8-128 and at least 1 char type
-
-// upon validation, output to user
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -20,6 +8,33 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+
+  var passArray = [];
+  var passLength = prompt("How long do you want your password?", "8 to 128 characters");
+
+  if (passLength >= 8 && passLength <= 128) {
+
+  } else {
+    alert("Please choose a number between 8 and 128")
+    return;
+  };
+
+  var useLower = comfirm("Would you like to include lower case letters?")
+  if (useLower){
+    passArray.push('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+  };
+  var useUpper = comfirm("Would you like to include upper case letters?")
+  if (useUpper){
+    passArray.push('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
+  };
+  var useLower = comfirm("Would you like to include lower case letters?")
+  if (useLower){
+    passArray.push('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+  };
+  var useLower = comfirm("Would you like to include lower case letters?")
+  if (useLower){
+    passArray.push('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
+  };
 
   passwordText.value = password;
 
